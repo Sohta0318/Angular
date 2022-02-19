@@ -1,0 +1,3 @@
+<button (click)="onDisplay()">Display Detail</button>
+<p *ngIf="isShow">{{ password }}</p>
+<div *ngFor="let i of all" [ngClass]="{ blue5: i >= 5 }">{{ i }}</div>

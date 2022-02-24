@@ -1,3 +1,4 @@
+import { UserService } from './user.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,15 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'assignments';
-  oddNumbers: number[] = [];
-  evenNumbers: number[] = [];
-
-  onIntervalFired(firedNumber: number) {
-    if (firedNumber % 2 === 0) {
-      this.evenNumbers.push(firedNumber);
-    } else {
-      this.oddNumbers.push(firedNumber);
-    }
-  }
+  // title = 'assignments';
+  // oddNumbers: number[] = [];
+  // evenNumbers: number[] = [];
+  // onIntervalFired(firedNumber: number) {
+  //   if (firedNumber % 2 === 0) {
+  //     this.evenNumbers.push(firedNumber);
+  //   } else {
+  //     this.oddNumbers.push(firedNumber);
+  //   }
+  // }
 }

@@ -1,3 +1,7 @@
+import { CounterService } from './counter.service';
+import { UserService } from './user.service';
+import { InactiveUsersComponent } from './assignment5/inactive-users/inactive-users.component';
+import { ActiveUsersComponent } from './assignment5/active-users/active-users.component';
 import { WarningAlertComponent } from './warnig-alert/warnig-alert.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,9 +26,11 @@ import { EvenComponent } from './assignment4/even/even.component';
     GameControlComponent,
     OddComponent,
     EvenComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [UserService, CounterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
